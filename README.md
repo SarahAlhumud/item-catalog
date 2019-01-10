@@ -2,15 +2,15 @@
 Second project in Full Stack Web Developer Nano-Degree.
 
 ## Outline
-* Project Overview
-* Getting started
-* Project Pages
+* [Project Overview](#project-overview)
+* [Getting started](#getting-started)
+* [Project Pages](#project-pages)
 * [Json Pages](#json-pages)
 
 ## Project Overview
 item-catalog is a flask application that provides a list of items within a variety of restaurants as well as provide a user registration and authentication system. Registered users will have the ability to post, edit and delete their own items.
 
-## Getting started
+## Getting Started
 ### First, fork the VM Configuration:
 Log into your personal Github account, and fork the [Udacity Fullstack Nanodegree](https://github.com/udacity/fullstack-nanodegree-vm) repo
 
