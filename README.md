@@ -1,9 +1,11 @@
 # item-catalog
+Second project in Full Stack Web Developer Nano-Degree.
+
 ## Outline
 * Project Overview
 * Getting started
 * Project Pages
-* Json Pages
+* [Json Pages](#json-pages)
 
 ## Project Overview
 item-catalog is a flask application that provides a list of items within a variety of restaurants as well as provide a user registration and authentication system. Registered users will have the ability to post, edit and delete their own items.
@@ -90,7 +92,7 @@ http://localhost:5000/restaurants/1/
 http://localhost:5000/restaurants/1/new/
 
 
-## Json Pages
+## JSON Pages
 a. All restaurants with their menu items (JSON format)
 http://localhost:5000/restaurants/menus/JSON
 
