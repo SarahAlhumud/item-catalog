@@ -1,0 +1,24 @@
+{% extends "layout.html" %}
+{% block title %}{{restaurant.name}} | Edit Menu Item{% endblock %}
+{% block head %}
+  {{ super() }}
+  <link rel="stylesheet" href="{{ url_for('static', filename='Login-Form-Dark.css') }}">
+{% endblock %}
+{% block restaurant_title %}{{restaurant.name}}{% endblock %}
+{% block header_content %}
+    <p>Edit Menu Item</p>
+{% endblock %}
+
+{% block content %}
+<div class="login-dark container">
+        <form action="{{ url_for('editMenuItem', menu_id=menu.id, restaurant_id=restaurant.id) }}" method="post">
+            <div class="form-group"><label for="name">Name</label><input class="form-control" type="text" name="name" placeholder="{{ menu.name}}"></div>
+            <div class="form-group"><label for="description">Description</label><input class="form-control" type="text" name="description" placeholder="{{ menu.description}}"></div>
+            <div class="form-group"><label for="course">Course</label><input class="form-control" type="text" name="course" placeholder="{{ menu.course}}"></div>
+            <div class="form-group"><label for="price">Price</label><input class="form-control" type="text" name="price" placeholder="{{ menu.price}}"></div>
+            <div class="form-group"><button class="btn btn-primary btn-block" type="submit">Edit</button></div>
+        </form>
+    </div>
+{% endblock %}
+
+

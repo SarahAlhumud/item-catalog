@@ -1,0 +1,43 @@
+{% extends "layout.html" %}
+{% block title %}Restaurants List{% endblock %}
+{% block restaurant_title %}Restaurants List{% endblock %}
+{% block header_content %}
+
+<p> Here list of Restaurants </p>
+<!--MESSAGE FLASHING EXAMPLE -->
+{% with messages = get_flashed_messages() %}
+{% if messages %}
+
+<div>
+    {% for message in messages %}
+    <p>- {{message}} </p>
+    {% endfor %}
+</div>
+{% endif %}
+{% endwith %}
+
+{% endblock %}
+
+{% block content %}
+<div class="features-boxed">
+    <div class="container">
+        <div class="intro container">
+            <h2 class="text-center"></h2>
+        </div>
+        <div class="row justify-content-end features">
+            {% for i in restaurants %}
+            <div class="col-sm-6 col-md-5 col-lg-4 item">
+                <div class="box">
+                    <h3 class="name">{{i.name}}</h3>
+                    <br/><br/><br/><br/>
+                    <div>
+                        <a class="learn-more" href="{{ url_for('restaurantMenu', restaurant_id=i.id) }}">Show Menu</a>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+        <hr>
+    </div>
+</div>
+{% endblock %}

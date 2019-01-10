@@ -1,0 +1,97 @@
+{% extends "layout.html" %}
+{% block title %}{{restaurant.name}}{% endblock %}
+{% block restaurant_title %}{{restaurant.name}}{% endblock %}
+{% block header_content %}
+<!--MESSAGE FLASHING EXAMPLE -->
+{% with messages = get_flashed_messages() %}
+{% if messages %}
+
+<div>
+    {% for message in messages %}
+    <p>- {{message}} </p>
+    {% endfor %}
+</div>
+{% endif %}
+{% endwith %}
+<p><a class="learn-more" href="{{url_for('newMenuItem', restaurant_id = restaurant.id) }}"> Create New Item</a></p>
+{% endblock %}
+
+{% block content %}
+<div class="features-boxed">
+    <div class="container">
+        <div class="intro container">
+            <h2 class="text-center"></h2>
+        </div>
+        <div class="row justify-content-end features">
+            {% for i in items %}
+            <div class="col-sm-6 col-md-5 col-lg-4 item">
+                <div class="box">
+                    <h3 class="name">{{i.name}}</h3>
+                    <p class="description">{{i.description}}</p>
+                    <h4 class="price">{{i.price}}</h4>
+                    <div>
+                        <a class="learn-more" href="{{ url_for('editMenuItem', restaurant_id=restaurant.id,menu_id=i.id) }}">Edit</a>
+                        <a class="learn-more" href="{{ url_for('deleteMenuItem', restaurant_id=restaurant.id,menu_id=i.id) }}">Delete</a>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+        <hr>
+    </div>
+</div>
+{% endblock %}
+
+<!--<!DOCTYPE html>-->
+<!--<html>-->
+
+<!--<head>-->
+<!--<meta charset="utf-8">-->
+<!--<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">-->
+<!--<title>{{restaurant.name}}</title>-->
+<!--<link rel=stylesheet type=text/css href="{{ url_for('static', filename='bootstrap.min.css') }}">-->
+<!--<link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css') }}">-->
+<!--<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Allura&amp;subset=latin-ext">-->
+<!--<link rel=stylesheet type=text/css href="{{ url_for('static', filename='Features-Boxed.css') }}">-->
+<!--</head>-->
+
+<!--<body>-->
+<!--<header>-->
+<!--<h1 class="title">{{restaurant.name}}</h1>-->
+<!--<hr>-->
+<!--&lt;!&ndash;MESSAGE FLASHING EXAMPLE &ndash;&gt;-->
+<!--{% with messages = get_flashed_messages() %}-->
+<!--{% if messages %}-->
+
+<!--<div>-->
+<!--{% for message in messages %}-->
+<!--<p>- {{message}} </p>-->
+<!--{% endfor %}-->
+<!--</div>-->
+<!--{% endif %}-->
+<!--{% endwith %}-->
+<!--<p><a class="learn-more" href="{{url_for('newMenuItem', restaurant_id = restaurant.id) }}"> Create New Item</a></p>-->
+<!--</header>-->
+<!--<div class="features-boxed">-->
+<!--<div class="container">-->
+<!--<div class="intro container">-->
+<!--<h2 class="text-center"></h2>-->
+<!--</div>-->
+<!--<div class="row justify-content-center features">-->
+<!--{% for i in items %}-->
+<!--<div class="col-sm-6 col-md-5 col-lg-4 item">-->
+<!--<div class="box">-->
+<!--<h3 class="name">{{i.name}}</h3>-->
+<!--<p class="description">{{i.description}}</p>-->
+<!--<h4 class="price">{{i.price}}</h4><a class="learn-more" href="{{ url_for('editMenuItem', restaurant_id=restaurant.id,menu_id=i.id) }}">Edit</a><a class="learn-more" href="{{ url_for('deleteMenuItem', restaurant_id=restaurant.id,menu_id=i.id) }}">Delete</a></div>-->
+<!--</div>-->
+<!--{% endfor %}-->
+<!--</div>-->
+<!--<hr>-->
+<!--</div>-->
+<!--</div>-->
+<!--<script src="{{ url_for('static', filename='jquery.min.js') }}"></script>-->
+<!--<script src="{{ url_for('static', filename='bootstrap.min.js') }}"></script>-->
+<!--</body>-->
+
+<!--</html>-->

@@ -1,0 +1,96 @@
+.features-boxed {
+  color: #313437;
+  /*background-color: #eef4f7;*/
+}
+
+.features-boxed p {
+  color: #A4A4A4;
+}
+
+.features-boxed h2 {
+  font-weight: bold;
+  color: inherit;
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  margin-top: 100px;
+  text-transform: uppercase;
+  font-size: 40px;
+  font-weight: 400;
+}
+
+@media (max-width:767px) {
+  .features-boxed h2 {
+    margin-bottom: 25px;
+    padding-top: 25px;
+    font-size: 24px;
+  }
+}
+
+.features-boxed .intro {
+  font-size: 16px;
+  max-width: 500px;
+  margin: 0 auto;
+  width: 10%;
+  background-color: #CFCFCF;
+}
+
+.features-boxed .intro p {
+  margin-bottom: 0;
+}
+
+.features-boxed .features {
+  padding: 50px 0;
+  width: auto;
+}
+
+.features-boxed .item {
+  text-align: center;
+}
+
+.features-boxed .item .box {
+  text-align: center;
+  padding-bottom: 30px;
+    padding-top: 30px;
+    padding-right: 20px;
+    padding-left: 20px;
+  background-color: #fff;
+  margin-bottom: 20px;
+  min-height: 100%;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+    display: grid;
+grid-template-rows: 10% auto 15% 10%;
+}
+
+.features-boxed .item .icon {
+  font-size: 60px;
+  color: #1485ee;
+  margin-top: 20px;
+  margin-bottom: 35px;
+}
+
+.features-boxed .item .name {
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 8px;
+  margin-top: 0;
+  color: inherit;
+    /*height: 20%;*/
+}
+
+.features-boxed .item .description {
+  font-size: 15px;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  /*height: 40%;*/
+}
+
+.features-boxed .item .price {
+  font-weight: bold;
+  font-size: 18px;
+    padding-bottom: 10px;
+  margin-bottom: 8px;
+  margin-top: 0;
+  color: inherit;
+    /*height: 10%;*/
+}
+

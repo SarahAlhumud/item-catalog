@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    {% block head %}
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>{% block title %}{% endblock %}</title>
+    <link rel=stylesheet type=text/css href="{{ url_for('static', filename='bootstrap.min.css') }}">
+    <link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Allura&amp;subset=latin-ext">
+    <link rel=stylesheet type=text/css href="{{ url_for('static', filename='Features-Boxed.css') }}">
+    {% endblock %}
+</head>
+<body>
+<header>
+    <h1 class="title">{% block restaurant_title %}{% endblock %}</h1>
+    <hr>
+    <a class="learn-more" href="{{ url_for('restaurantsList') }}">Restaurants</a>
+    {%if 'username' not in session %}
+    <a class="learn-more" href="{{ url_for('showLogin') }}"> Login</a>
+    {% else %}
+    <a class="learn-more" href="{{ url_for('disconnect') }}"> Logout</a>
+    {% endif %}
+    <br/><br/>
+    {% block header_content %}{% endblock %}
+</header>
+<div class="content">
+    {% block content %}{% endblock %}
+</div>
+<script src="{{ url_for('static', filename='jquery.min.js') }}"></script>
+<script src="{{ url_for('static', filename='bootstrap.min.js') }}"></script>
+{% block scripts %}{% endblock %}
+</body>
+
+</html>

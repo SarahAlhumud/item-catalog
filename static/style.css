@@ -1,0 +1,50 @@
+header {
+  padding-top: 170px;
+  text-align: center;
+  /*min-height: 70vh;*/
+  padding-bottom: 70px;
+}
+
+.h1, h1 {
+}
+
+.title {
+  font-family: 'Allura';
+}
+
+header p {
+  font-weight: 100;
+  margin-left: 30%;
+  margin-right: 30%;
+  padding-bottom: 20px;
+  color: #A4A4A4;
+}
+
+header hr {
+  margin-left: 30%;
+  margin-right: 30%;
+}
+
+.features-boxed .container {
+  display: flex;
+  flex-flow: row-reverse;
+  padding-bottom: 2px;
+}
+
+.features-boxed hr {
+  border-top: 5px solid rgba(0,0,0,.2);
+}
+
+.learn-more {
+  padding: 10px;
+  color: #A4A4AA;
+  margin-bottom: 20px;
+    padding-bottom: 20px;
+
+}
+
+a:hover {
+  color: #4A4A4A;
+  text-decoration: underline;
+}
+

@@ -1,0 +1,63 @@
+.login-dark form {
+  background-color: #F5F5F5;
+  padding: 60px;
+  border-radius: 4px;
+  border: 1px solid rgba(0,0,0,.1);
+  margin-left: 30%;
+  margin-right: 30%;
+}
+
+.login-dark .illustration {
+  text-align: center;
+  padding: 15px 0 20px;
+  font-size: 100px;
+  color: #2980ef;
+}
+
+.login-dark form .form-control {
+  background: none;
+  border: none;
+  border-bottom: 1px solid #434a52;
+  border-radius: 0;
+  box-shadow: none;
+  outline: none;
+  color: inherit;
+}
+
+.login-dark form .btn-primary, .login-dark .btn-primary {
+  background: #CFCFCF;
+  padding: 11px;
+  margin-top: 26px;
+  text-shadow: none;
+  outline: none;
+  color: #212529;
+  border:none;
+}
+
+.login-dark form .btn-primary:hover, .login-dark form .btn-primary:active {
+  outline: none;
+}
+
+.login-dark form .forgot {
+  display: block;
+  text-align: center;
+  font-size: 12px;
+  color: #6f7a85;
+  opacity: 0.9;
+  text-decoration: none;
+}
+
+.login-dark form .forgot:hover, .login-dark form .forgot:active {
+  opacity: 1;
+  text-decoration: none;
+}
+
+.login-dark form .btn-primary:active {
+  transform: translateY(1px);
+}
+
+.login-dark label {
+  width: 100%;
+  font-weight: 100;
+}
+
