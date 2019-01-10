@@ -17,11 +17,11 @@ cd fullstack-vm
 vagrant up
 ```
 to log from your terminal into vm write the following command:
-` vagrant ssh `
+``` vagrant ssh ```
 to logout from vm, write the following command in vm:
-` exit `
+``` exit ```
 to shutdown the vm, exit from vm then write the following command in your terminal:
-` vagrant halt `
+``` vagrant halt ```
 
 ## Forth, download item-catalog app:
 install [item-catalog](https://github.com/SarahAlhumud/item-catalog/) application, and move it to `fullstack-vm/vagrant` directory.
