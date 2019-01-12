@@ -3,7 +3,8 @@ from sqlalchemy.orm import sessionmaker
 
 from database_setup import Restaurant, Base, MenuItem, User
 
-engine = create_engine('sqlite:///restaurantmenuwithusers.db?check_same_thread=False')
+engine = create_engine('''sqlite:///restaurantmenuwithusers.db
+?check_same_thread=False''')
 # Bind the engine to the metadata of the Base class so that the
 # declaratives can be accessed through a DBSession instance
 Base.metadata.bind = engine
@@ -12,7 +13,8 @@ DBSession = sessionmaker(bind=engine)
 session = DBSession()
 
 
-# urbanRestaurant = session.query(Restaurant).filter_by(name="Urban Burger").one()
+# urbanRestaurant = session.query(Restaurant)
+# .filter_by(name="Urban Burger").one()
 #
 # items = session.query(MenuItem).filter_by(restaurant_id=urbanRestaurant.id)
 #
@@ -92,20 +94,26 @@ def getRestaurantItems(restaurant):
 
 
 def getItem(item_id, restaurant_id):
-    item = session.query(MenuItem).filter_by(id=item_id, restaurant_id=restaurant_id).one()
+    item = session.query(MenuItem).filter_by(id=item_id,
+                                             restaurant_id=restaurant_id).one()
 
     return item
 
 
-def createNewMenuItem(item_name, item_description, item_course, item_price, restaurant_id, user_id):
-    item = MenuItem(name=item_name, description=item_description, course=item_course, price=item_price, restaurant_id=restaurant_id, user_id=user_id)
+def createNewMenuItem(item_name, item_description, item_course,
+                      item_price, restaurant_id, user_id):
+    item = MenuItem(name=item_name, description=item_description,
+                    course=item_course, price=item_price,
+                    restaurant_id=restaurant_id, user_id=user_id)
 
     session.add(item)
     session.commit()
 
 
-def renameMenuItem(item_name, item_description, item_course, item_price, item_id, restaurant_id):
-    item = session.query(MenuItem).filter_by(id=item_id, restaurant_id=restaurant_id).one()
+def renameMenuItem(item_name, item_description, item_course,
+                   item_price, item_id, restaurant_id):
+    item = session.query(MenuItem).filter_by(id=item_id,
+                                             restaurant_id=restaurant_id).one()
     if item_name is not "":
         item.name = item_name
     if item_description is not "":
@@ -124,5 +132,3 @@ def deleteItemQuery(item_id):
 
     session.delete(item)
     session.commit()
-
-

@@ -73,7 +73,6 @@ def gconnect():
     if result['issued_to'] != CLIENT_ID:
         response = make_response(
             json.dumps("Token's client ID does not match app's."), 401)
-        print("Token's client ID does not match app's.")
         response.headers['Content-Type'] = 'application/json'
         return response
 
@@ -221,7 +220,6 @@ def restaurantItemSON(restaurant_id, menu_id):
 
 @app.route('/restaurants/<int:restaurant_id>/new/', methods=['GET', 'POST'])
 def newMenuItem(restaurant_id):
-    restaurant = getRestaurant(restaurant_id)
 
     if 'username' not in login_session:
         return redirect('/login')
@@ -239,8 +237,8 @@ def newMenuItem(restaurant_id):
 @app.route('/restaurants/<int:restaurant_id>/<int:menu_id>/edit/',
            methods=['GET', 'POST'])
 def editMenuItem(restaurant_id, menu_id):
-    restaurant = getRestaurant(restaurant_id)
-    creator = getUserInfo(restaurant.user_id)
+    item = getItem(menu_id, restaurant_id)
+    creator = getUserInfo(item.user_id)
 
     if login_session['user_id'] != creator.id \
             or 'username' not in login_session:
@@ -260,8 +258,8 @@ def editMenuItem(restaurant_id, menu_id):
 @app.route('/restaurants/<int:restaurant_id>/<int:menu_id>/delete/',
            methods=['GET', 'POST'])
 def deleteMenuItem(restaurant_id, menu_id):
-    restaurant = getRestaurant(restaurant_id)
-    creator = getUserInfo(restaurant.user_id)
+    item = getItem(menu_id, restaurant_id)
+    creator = getUserInfo(item.user_id)
 
     if login_session['user_id'] != creator.id \
             or 'username' not in login_session:
