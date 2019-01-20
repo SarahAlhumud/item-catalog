@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="91b68afa-c663-4b1c-bfcd-dc7dffb52b47" name="Default Changelist" comment="" />
+    <list default="true" id="91b68afa-c663-4b1c-bfcd-dc7dffb52b47" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/__init__.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,13 +105,13 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/project.py">
+        <entry file="file://$PROJECT_DIR$/__init__.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-105">
-              <caret line="281" column="14" selection-start-line="281" selection-end-line="282" />
+            <state relative-caret-position="405">
+              <caret line="315" column="12" selection-start-line="315" selection-start-column="12" selection-end-line="315" selection-end-column="12" />
               <folding>
                 <element signature="e#0#90#0" expanded="true" />
-                <marker date="1547941273000" expanded="true" signature="7781:11334" ph="..." />
+                <marker date="1547971631000" expanded="true" signature="7781:11307" ph="..." />
               </folding>
             </state>
           </provider>
@@ -199,6 +201,7 @@
         <option value="$PROJECT_DIR$/templates/login.html" />
         <option value="$PROJECT_DIR$/project.py" />
         <option value="$PROJECT_DIR$/queries.py" />
+        <option value="$PROJECT_DIR$/__init__.py" />
       </list>
     </option>
   </component>
@@ -325,7 +328,7 @@
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14377682" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14377682" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -339,7 +342,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="9" weight="0.32891566" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5007153" side_tool="true" weight="0.32891566" />
-      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49928468" visible="true" weight="0.32891566" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.49928468" visible="true" weight="0.32891566" />
       <window_info anchor="bottom" id="Python Console" order="12" />
       <window_info anchor="bottom" id="Inspection Results" order="13" weight="0.32891566" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -512,13 +515,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/project.py">
+    <entry file="file://$PROJECT_DIR$/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-105">
-          <caret line="281" column="14" selection-start-line="281" selection-end-line="282" />
+        <state relative-caret-position="405">
+          <caret line="315" column="12" selection-start-line="315" selection-start-column="12" selection-end-line="315" selection-end-column="12" />
           <folding>
             <element signature="e#0#90#0" expanded="true" />
-            <marker date="1547941273000" expanded="true" signature="7781:11334" ph="..." />
+            <marker date="1547971631000" expanded="true" signature="7781:11307" ph="..." />
           </folding>
         </state>
       </provider>
