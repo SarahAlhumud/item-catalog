@@ -1,6 +1,7 @@
 from flask import Flask, render_template, request, \
     redirect, url_for, flash, jsonify
-from queries import *
+# from queries import *
+from package import *
 from flask import session as login_session
 import random
 import string
