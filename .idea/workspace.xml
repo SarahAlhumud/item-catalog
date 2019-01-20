@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="91b68afa-c663-4b1c-bfcd-dc7dffb52b47" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client_secrets.json" beforeDir="false" afterPath="$PROJECT_DIR$/client_secrets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/__init__.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -76,7 +76,7 @@
           <entry key="html" value="919" />
           <entry key="json" value="1" />
           <entry key="py" value="5786" />
-          <entry key="txt" value="33" />
+          <entry key="txt" value="47" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -84,7 +84,7 @@
           <entry key="CSS" value="144" />
           <entry key="HTML" value="919" />
           <entry key="JSON" value="1" />
-          <entry key="PLAIN_TEXT" value="60" />
+          <entry key="PLAIN_TEXT" value="74" />
           <entry key="Python" value="5786" />
         </counts>
       </usages-collector>
@@ -109,11 +109,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/__init__.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="42" column="51" lean-forward="true" selection-start-line="42" selection-start-column="51" selection-end-line="42" selection-end-column="51" />
+            <state relative-caret-position="279">
+              <caret line="56" column="64" selection-start-line="56" selection-start-column="64" selection-end-line="56" selection-end-column="64" />
               <folding>
                 <element signature="e#0#90#0" expanded="true" />
-                <marker date="1548001628000" expanded="true" signature="7814:11340" ph="..." />
+                <marker date="1548003325000" expanded="true" signature="7863:11389" ph="..." />
               </folding>
             </state>
           </provider>
@@ -173,6 +173,7 @@
       <find>return</find>
       <find>/restaurant</find>
       <find>createUser</find>
+      <find>json.loads</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -329,7 +330,21 @@
       <option name="project" value="LOCAL" />
       <updated>1548001657155</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Client Secrets">
+      <created>1548002604974</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1548002604975</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Client Secrets">
+      <created>1548002965189</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1548002965189</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TodoView">
@@ -378,7 +393,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Using PostgreSQL" />
     <MESSAGE value="File Not Found" />
-    <option name="LAST_COMMIT_MESSAGE" value="File Not Found" />
+    <MESSAGE value="Client Secrets" />
+    <option name="LAST_COMMIT_MESSAGE" value="Client Secrets" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file:///Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/socketserver.py">
@@ -539,11 +555,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="42" column="51" lean-forward="true" selection-start-line="42" selection-start-column="51" selection-end-line="42" selection-end-column="51" />
+        <state relative-caret-position="279">
+          <caret line="56" column="64" selection-start-line="56" selection-start-column="64" selection-end-line="56" selection-end-column="64" />
           <folding>
             <element signature="e#0#90#0" expanded="true" />
-            <marker date="1548001628000" expanded="true" signature="7814:11340" ph="..." />
+            <marker date="1548003325000" expanded="true" signature="7863:11389" ph="..." />
           </folding>
         </state>
       </provider>
