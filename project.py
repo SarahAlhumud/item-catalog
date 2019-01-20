@@ -154,7 +154,7 @@ def gdisconnect():
         print("this is the status " + result['status'])
         response = make_response(json
                                  .dumps('''Failed to revoke token
-                                  for given user.''', 400))
+                                  for given user.'''), 400)
         response.headers['Content-Type'] = 'application/json'
         return response
 
