@@ -60,6 +60,7 @@ python project.py
 ## Project Pages
 ### The homepage displays all available restaurants.
 http://localhost:5000/
+
 http://localhost:5000/restaurants/
 
 ### Page shows all the items available for specific category.
@@ -80,16 +81,6 @@ http://localhost:5000/restaurants/1/new/
 http://localhost:5000/restaurants/1/1/edit/
 
 http://localhost:5000/restaurants/1/1/delete/
-
-
-### After logging, a user (not owner) has the ability to add an item.
-http://localhost:5000/
-
-http://localhost:5000/restaurants/
-
-http://localhost:5000/restaurants/1/
-
-http://localhost:5000/restaurants/1/new/
 
 
 ## JSON Pages
