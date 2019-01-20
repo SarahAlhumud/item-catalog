@@ -85,5 +85,6 @@ class MenuItem(Base):
 
 
 # insert at end of file
-engine = create_engine('sqlite:///restaurantmenuwithusers.db')
+# engine = create_engine('sqlite:///restaurantmenuwithusers.db')
+engine = create_engine('postgresql://catalog:123123@localhost/catalog')
 Base.metadata.create_all(engine)
